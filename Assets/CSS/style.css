@@ -1,16 +1,44 @@
-.navbar {
+.imgbg {
+  background-image: url('../images/backgroundmenu.jpg');
 }
 
-.jumbotron {
-  background: #ddd;
+.bgmenu{
+  background: rgba(221, 221, 221, 0.8);
+  color: #000;
+  /* background: rgb(65, 108, 193) coleur pour les éléments */
 }
 
+.bgiconmenu {
+  color: #000;
+}
 
+.bgmenu a {
+  color: #005573;
+}
 
+.bgmenu a:hover {
+  color: #000;
+}
+
+.bg-element {
+  background: #B5E6EC;
+  color: #005573;
+}
 
 
 /* FOOTER */
 
+.bgfooter {
+    background: rgb(221, 221, 221);
+    margin: 10px 80px;
+}
 
+.bgfooter a {
+  color: #005573;
+}
+
+.bgfooter a:hover {
+  color: #000;
+}
 
 /* FOOTER */
