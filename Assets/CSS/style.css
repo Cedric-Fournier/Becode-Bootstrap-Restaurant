@@ -25,6 +25,16 @@
   color: #005573;
 }
 
+/* MAP GOOGLE */
+
+#map, #map2 {
+  width: 100%;
+  height: 300px;
+  background-color: grey;
+ }
+
+ /* MAP GOOGLE */
+
 
 /* FOOTER */
 

@@ -22,9 +22,10 @@
         <select class="form-control">
           <option disabled selected>Choisissez votre objet</option>
           <option>Emploi</option>
+          <option>Réservation</option>
           <option>Événement</option>
           <option>Réclamation</option>
-          <option>Problème diver</option>
+          <option>Problème divers</option>
           <option>Autres</option>
         </select>
       </div>
@@ -40,7 +41,7 @@
 
     <ul class="list-group">
       <li class="list-group-item disabled">Informations</li>
-      <li class="list-group-item"><strong class="text-info">Adresse : </strong>12 avenue du givre 1090 Bruxelles</li>
+      <li class="list-group-item"><strong class="text-info">Adresse : </strong>12 Boulevard Guillaume Van Haelen 1090 Bruxelles</li>
       <li class="list-group-item"><strong class="text-info">Telephone : </strong>02/46 87 91 22 </li>
       <li class="list-group-item"><strong class="text-info" class="text-info">E-mail Information : </strong>info@johnson-ice.be</li>
       <li class="list-group-item"><strong class="text-info">E-mail Administration : </strong>admin@johnson-ice.be</li>
