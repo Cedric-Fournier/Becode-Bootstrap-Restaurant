@@ -7,6 +7,7 @@
 
     <ul class="list-group">
       <li class="list-group-item disabled">Johnson Ice Forest</li>
+      <li class="list-group-item">Telephone : 02/234 45 34</li>
       <li class="list-group-item">Adresse : 12 Boulevard Guillaume Van Haelen</li>
       <li class="list-group-item">Heure d'ouverture : 08h - 19h tous les jours sauf dimanche</li>
       <li class="list-group-item">Fermé : Le dimanche</li>
@@ -30,6 +31,7 @@
 
     <ul class="list-group">
       <li class="list-group-item disabled">Johnson Ice Uccle</li>
+      <li class="list-group-item">Telephone : 02/244 15 74</li>
       <li class="list-group-item">Adresse : 67 Chaussée d'Alsemberg</li>
       <li class="list-group-item">Heure d'ouverture : 08h - 19h tous les jours sauf dimanche</li>
       <li class="list-group-item">Fermé : Le dimanche</li>
