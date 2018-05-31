@@ -1,7 +1,7 @@
 <div class="jumbotron imgbg">
-  <nav class="navbar navbar-expand-sm flex-nowrap bgmenu">
-    <button class="navbar-toggler mr-2 bgiconmenu" type="button" data-toggle="collapse" data-target="#navbar5">
-      <span class="navbar-toggler-icon"></span>
+  <nav class="navbar navbar-expand-md flex-nowrap bgmenu">
+    <button class="navbar-toggler mr-2" type="button" name="menu-app" data-toggle="collapse" data-target="#navbar5">
+      <i class="fas fa-align-center" style="color:#005573;"></i>
     </button>
     <span class="navbar-brand w-100">Johnson Ice</span>
     <div class="navbar-collapse collapse w-100 justify-content-center" id="navbar5">
