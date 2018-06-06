@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="Description" content="Johnson Ice, glacier sur Bruxelles">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#317EFB"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <script src="./Assets/JS/mapgoogle.js"></script>
+    <script src="/Projet-Restaurant/Assets/JS/sw.js"></script>
+    </script>
+    <title>Johnson Ice</title>
+  </head>
+  <body>
+      <div class="container">
+
+        <div class="jumbotron imgbg">
+          <nav class="navbar navbar-expand-md flex-nowrap bgmenu">
+            <button class="navbar-toggler mr-2" type="button" name="menu-app" data-toggle="collapse" data-target="#navbar5">
+              <i class="fas fa-align-center" style="color:#005573;"></i>
+            </button>
+            <span class="navbar-brand w-100">Johnson Ice</span>
+            <div class="navbar-collapse collapse w-100 justify-content-center" id="navbar5">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="carte.html">Carte</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="photo.html">Photos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="restaurants.html">Restaurants</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="w-100"><!--spacer--></div>
+          </nav>
+        </div>
+
+<div class="row">
+  <div class="col-sm-4">
+    <img src="./Assets/images/pomme.jpeg" alt="Glace Pomme" height="350" width="350">
+  </div>
+  <div class="col-sm-4">
+    <img src="./Assets/images/praline.jpg" alt="Glace Praline" height="350" width="350">
+  </div>
+  <div class="col-sm-4">
+    <img src="./Assets/images/stracciatella.jpg" alt="Glace Stracciatella" height="350" width="350">
+  </div>
+</div>
+
+<br>
+
+<div class="row">
+  <div class="col-sm-12">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-end">
+        <li class="page-item">
+          <a class="page-link text-info" href="./photo2.html">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="./photo.html">1</a></li>
+        <li class="page-item"><a class="page-link" href="./photo2.html">2</a></li>
+        <li class="page-item active"><a class="page-link" href="./photo3.html">3</a></li>
+        <li class="page-item"><a class="page-link" href="./photo4.html">4</a></li>
+        <li class="page-item">
+          <a class="page-link text-info" href="./photo4.html">Next</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+</div>
+
+<div class="footer-copyright text-center py-3 bgfooter">© 2018 Copyright:
+  <a href="#"> JohnsonFood.com</a>
+</div>
+
+<script type="text/javascript">
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/Projet-Restaurant/Assets/JS/sw.js').then(function(registration) {
+        // Registration was successful
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }, function(err) {
+        // registration failed :(
+        console.log('ServiceWorker registration failed: ', err);
+      });
+    });
+  }
+</script>
+
+</body>
+</html>

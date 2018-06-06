@@ -1,0 +1,21 @@
+{
+  "short_name": "J-Ice",
+  "name": "Jonhson Ice",
+  "icons": [
+  {
+    "src": "./Assets/images/icon-192.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  },
+  {
+    "src": "./Assets/images/icon-512.png",
+    "type": "image/png",
+    "sizes": "512x512"
+  }
+],
+  "start_url": "/Projet-Restaurant-Bootstrapt/index.html",
+  "display": "fullscreen",
+  "background_color": "#FFFADB",
+  "scope": "/Projet-Restaurant-Bootstrapt/",
+  "theme_color": "#317EFB"
+}
