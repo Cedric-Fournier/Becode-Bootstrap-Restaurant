@@ -8,6 +8,18 @@
   /* background: rgb(65, 108, 193) coleur pour les éléments */
 }
 
+.bgmenu span {
+  font-family: 'Chela One', cursive;
+  font-size: 30px !important;
+  color: #6d9bbf;
+  text-align: center;
+}
+
+.bgmenu .styleTitle {
+  font-size: 32px !important;
+  color: #43484c;
+}
+
 .bgmenu a {
   color: #005573;
 }

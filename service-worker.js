@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["Assets/CSS/style.css","e05865b0f9fe0327381f1cab3d7abbd4"],["Assets/JS/mapgoogle.js","62c3c28fd78d1b008caf873e531e13ba"],["Assets/JS/service-worker.js","87a6a8c5774a253eb7f425cddd772e6d"],["Assets/JS/sw.js","476301a5375901b2d2f17d9eb18b1956"],["Assets/images/abricot.jpg","48550ef13884ecbdefb2b7a21b833003"],["Assets/images/avenger-glace.jpg","a44718d2fe8595b20759381451ca76c2"],["Assets/images/backgroundmenu.jpg","78fb3206fa47b11d7d7bd2b3c5087b5a"],["Assets/images/cafe.jpg","7052ddf41e2a28b16dbf42332bc31066"],["Assets/images/chocolat.jpg","af9723c58663564ffbf6e110f00c553b"],["Assets/images/fraise.jpg","524d28305f8d4759574bb5a468c688fb"],["Assets/images/icon192.png","6ecb11dd1e6256f18300ffed20a8c043"],["Assets/images/icon512.png","746505e44c434514737054ec95e982e6"],["Assets/images/peche.jpg","c79f138e9bd4a257a9883211edeb06c4"],["Assets/images/pistache.jpg","1b7c6713732213b2cf1c2ea97c17c3a6"],["Assets/images/pomme.jpeg","6986219a9e51f9303a69b9182c608780"],["Assets/images/praline.jpg","20dc719e7e912546a853e67621e6407f"],["Assets/images/stracciatella.jpg","b6f51625434ad2dcf2e16a71c400759a"],["Assets/images/tiramisu.jpg","5aed51ea30e1949e59ebf367cb06959b"],["Assets/images/vanille.jpeg","db2836dc5fded3e6e7ce14b19bcc9039"],["README.md","e3371de063adb94fa0061c14ca1b41c1"],["app.js","c25b8e3014c412eb188e8662511c6657"],["carte.html","05c39c825e3463d84ea290f519b8aede"],["contact.html","d3a7c03ce5fd143278fd319140f1ab75"],["index.html","d6098bb5ca3fc2afe936ac7e4ebd5703"],["manifest.json","effdf5980e30b4aa6d0e4665e83109b3"],["photo.html","1cf58639a09437a9645246da1f7a287d"],["photo2.html","88a0af48162aac3be78c58c8f6177c98"],["photo3.html","9fdbec0a233eb7da821902e19393fe73"],["photo4.html","9539acae96ea5989919356e7f205e4a2"],["restaurants.html","579cd99a4f0446d873fe8f73044b4d38"],["script.js","d41d8cd98f00b204e9800998ecf8427e"]];
+var precacheConfig = [["Assets/CSS/style.css","928a16e9988f806a36eef833e7e17625"],["Assets/JS/mapgoogle.js","62c3c28fd78d1b008caf873e531e13ba"],["Assets/images/abricot.jpg","bed0475ca9945c3ac6105d0f8162a15f"],["Assets/images/avenger-glace.jpg","5499441ef014eaaf261912d57cbb76e7"],["Assets/images/backgroundmenu.jpg","78fb3206fa47b11d7d7bd2b3c5087b5a"],["Assets/images/cafe.jpg","7052ddf41e2a28b16dbf42332bc31066"],["Assets/images/chocolat.jpg","bb6c64b47e71815b95c20774563c6be8"],["Assets/images/fraise.jpg","524d28305f8d4759574bb5a468c688fb"],["Assets/images/icon192.png","49b4975467e3e8b0c251fcd0cc870ebb"],["Assets/images/icon512.png","7a7818e0c451f6bb5ddafdda0737e178"],["Assets/images/peche.jpg","c79f138e9bd4a257a9883211edeb06c4"],["Assets/images/pistache.jpg","337bbc00003fee1d499a8d260198ebee"],["Assets/images/pomme.jpeg","09e83e2f7f5120c9078f6190687c5f63"],["Assets/images/praline.jpg","9111ba5d374148e8d50ea377bfbc01c9"],["Assets/images/stracciatella.jpg","b6f51625434ad2dcf2e16a71c400759a"],["Assets/images/tiramisu.jpg","5aed51ea30e1949e59ebf367cb06959b"],["Assets/images/uccle-etablissement.jpg","133f5b657b72a1dfb26c5f41d549f092"],["Assets/images/vanille.jpeg","db2836dc5fded3e6e7ce14b19bcc9039"],["README.md","e3371de063adb94fa0061c14ca1b41c1"],["app.js","c25b8e3014c412eb188e8662511c6657"],["carte.html","0323edfc01c1143a875b4b1f86cc5435"],["contact.html","0f25c7ae80318fb41ab88f7bb781a80d"],["favicon.png","8ac2baadaf4ce3623c3bddf3c4bacaa3"],["index.html","294cbbbf8cfc935d8bc42b564ee854cc"],["manifest.json","effdf5980e30b4aa6d0e4665e83109b3"],["photo.html","f6b4a87f1f76d3671f33de793ac042a4"],["photo2.html","b118a7fc798b08643a6d00e02ebc0ef5"],["photo3.html","9a453d4b353a51776b047cdca7ac08ee"],["photo4.html","ddb10fab5088a93bffaea01ca111d300"],["restaurants.html","04b4e9df2a8ea40e5de2fcf88e64a05b"]];
 var cacheName = 'sw-precache-v3-sw-precache-' + (self.registration ? self.registration.scope : '');
 
 
@@ -45,7 +45,7 @@ var ignoreUrlParametersMatching = [/^utm_/];
 
 
 
-var addDirectoryIndex = function (originalUrl, index) {
+var addDirectoryIndex = function(originalUrl, index) {
     var url = new URL(originalUrl);
     if (url.pathname.slice(-1) === '/') {
       url.pathname += index;
@@ -53,7 +53,7 @@ var addDirectoryIndex = function (originalUrl, index) {
     return url.toString();
   };
 
-var cleanResponse = function (originalResponse) {
+var cleanResponse = function(originalResponse) {
     // If this is not a redirected response, then we don't have to do anything.
     if (!originalResponse.redirected) {
       return Promise.resolve(originalResponse);
@@ -75,7 +75,7 @@ var cleanResponse = function (originalResponse) {
     });
   };
 
-var createCacheKey = function (originalUrl, paramName, paramValue,
+var createCacheKey = function(originalUrl, paramName, paramValue,
                            dontCacheBustUrlsMatching) {
     // Create a new URL object to avoid modifying originalUrl.
     var url = new URL(originalUrl);
@@ -91,7 +91,7 @@ var createCacheKey = function (originalUrl, paramName, paramValue,
     return url.toString();
   };
 
-var isPathWhitelisted = function (whitelist, absoluteUrlString) {
+var isPathWhitelisted = function(whitelist, absoluteUrlString) {
     // If the whitelist is empty, then consider all URLs to be whitelisted.
     if (whitelist.length === 0) {
       return true;
@@ -104,7 +104,7 @@ var isPathWhitelisted = function (whitelist, absoluteUrlString) {
     });
   };
 
-var stripIgnoredUrlParameters = function (originalUrl,
+var stripIgnoredUrlParameters = function(originalUrl,
     ignoreUrlParametersMatching) {
     var url = new URL(originalUrl);
     // Remove the hash; see https://github.com/GoogleChrome/sw-precache/issues/290
