@@ -13,7 +13,7 @@
     "sizes": "512x512"
   }
 ],
-  "start_url": "/Projet-Restaurant-Bootstrapt/index.html",
+  "start_url": "https://cedric-fournier.github.io/Bootstrap-Restaurant/index.html",
   "display": "fullscreen",
   "background_color": "#FFFADB",
   "scope": "/Projet-Restaurant-Bootstrapt/",
