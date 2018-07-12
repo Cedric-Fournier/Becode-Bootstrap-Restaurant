@@ -1,6 +1,6 @@
 .imgbg {
   background-image: url('../images/backgroundmenu.jpg');
-  background-repeat: no-repeat;
+  background-repeat:repeat-x;
 }
 
 .bgmenu{
