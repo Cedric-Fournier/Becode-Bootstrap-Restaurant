@@ -1,12 +1,11 @@
 .imgbg {
-  background-image: url('../images/backgroundmenu.jpg');
+  background-image: url('../assets/images/backgroundmenu.jpg');
   background-repeat:repeat-x;
 }
 
 .bgmenu{
   background: rgba(221, 221, 221, 0.8);
   color: #000;
-  /* background: rgb(65, 108, 193) coleur pour les éléments */
 }
 
 .bgmenu span {
@@ -34,18 +33,11 @@
   color: #005573;
 }
 
-/* MAP GOOGLE */
-
 #map, #map2 {
   width: 100%;
   height: 300px;
   background-color: grey;
  }
-
- /* MAP GOOGLE */
-
-
-/* FOOTER */
 
 .bgfooter {
     background: rgb(221, 221, 221);
@@ -59,5 +51,3 @@
 .bgfooter a:hover {
   color: #000;
 }
-
-/* FOOTER */
